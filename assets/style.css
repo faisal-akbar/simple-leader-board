@@ -8,6 +8,11 @@ h3 {
   font-size: 24px;
 }
 
+h5 {
+  font-size: 20px;
+  color: #1e1e1e;
+}
+
 main,
 nav .container,
 .sub-section {
@@ -18,7 +23,7 @@ nav .container,
   width: 40px;
 }
 
-.navbar-nav>li {
+.navbar-nav > li {
   padding: 0px 10px;
 }
 
@@ -60,17 +65,15 @@ nav.primary-highlight {
   height: 24px;
 }
 
-.card-title {
-  color: #413960;
-  font-size: 1.5rem;
-}
+/* .card-title {
+  color: #1e1e1e;
+  font-size: 20px;
+} */
 
 .card-text,
 .card-footer p {
   color: #585859;
 }
-
-
 
 .primary-highlight {
   color: #562eff;
@@ -89,5 +92,5 @@ nav.primary-highlight {
   border-radius: 40px;
   background-color: rgba(255, 228, 232, 1);
   font-size: 14px;
-  color: #FF4A60;
+  color: #ff4a60;
 }
