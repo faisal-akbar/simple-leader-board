@@ -4,6 +4,10 @@ body {
   font-family: poppins, sans-serif;
 }
 
+h3 {
+  font-size: 24px;
+}
+
 main,
 nav .container,
 .sub-section {
@@ -12,6 +16,14 @@ nav .container,
 
 .navbar img {
   width: 40px;
+}
+
+.navbar-nav>li {
+  padding: 0px 10px;
+}
+
+nav.primary-highlight {
+  background-color: #562eff;
 }
 
 .player img {
@@ -58,13 +70,7 @@ nav .container,
   color: #585859;
 }
 
-.navbar-nav>li {
-  padding: 0px 10px;
-}
 
-nav.primary-highlight {
-  background-color: #562eff;
-}
 
 .primary-highlight {
   color: #562eff;
