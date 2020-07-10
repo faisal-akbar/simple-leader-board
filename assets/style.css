@@ -1,0 +1,87 @@
+body {
+  background-color: #f3f1ff;
+  margin-bottom: 40px;
+  font-family: poppins, sans-serif;
+}
+
+main,
+nav .container,
+.sub-section {
+  max-width: 870px;
+}
+
+.navbar img {
+  width: 40px;
+}
+
+.player img {
+  width: 56px;
+}
+
+.blog img {
+  max-width: 177px;
+  height: 117px;
+}
+
+#courses .card {
+  background-color: #fff;
+  border: none;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+#courses .card-img-top {
+  padding: 18px;
+  /* max-width: 345px;
+  max-height: 182px; */
+}
+
+.card-footer {
+  background-color: #fff;
+  border-top: none;
+  padding-bottom: 10px;
+  border-radius: 18px !important;
+}
+
+.card-footer img {
+  width: 24px;
+  height: 24px;
+}
+
+.card-title {
+  color: #413960;
+  font-size: 1.5rem;
+}
+
+.card-text,
+.card-footer p {
+  color: #585859;
+}
+
+.navbar-nav>li {
+  padding: 0px 10px;
+}
+
+nav.primary-highlight {
+  background-color: #562eff;
+}
+
+.primary-highlight {
+  color: #562eff;
+}
+
+.star p i:nth-child(-n + 4) {
+  color: orange;
+}
+
+.star p {
+  font-size: 14px;
+}
+
+.clock p {
+  padding: 0px 8px;
+  border-radius: 40px;
+  background-color: rgba(255, 228, 232, 1);
+  font-size: 14px;
+  color: #FF4A60;
+}
