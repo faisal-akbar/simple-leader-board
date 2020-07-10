@@ -15,205 +15,255 @@
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 
-<body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark primary-highlight">
-      <div class="container px-0">
-        <a class="navbar-brand" href="#"><img src="assets/icon/logo.png" alt="" /></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <!-- use ml-auto for move the nav-item to right -->
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active pt-2">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item pt-2">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item pt-2">
-              <a class="nav-link" href="#">Works</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><img src="assets/profile/profile-1.png" alt="" /></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
+<!-- When Loading onload="myFunction()" style="margin:0;" -->
 
-  <main class="mx-auto mt-4">
-    <section class="container-fluid bg-white pb-3 pt-2 rounded">
-      <h3 class="pt-3 primary-highlight">Top Player</h3>
-      <!-- .row*2>.col-md-4.player*3>img+p{player-$} -->
-      <div class="row">
-        <div class="col-md-4 col-sm-6 col-6 player p-3 d-flex align-items-center">
-          <img src="assets/profile/profile-1.png" alt="" />
-          <p class="pl-3">John Smith</p>
-        </div>
-        <div class="col-md-4 col-sm-6 player col-6 p-3 d-flex align-items-center">
-          <img src="assets/profile/profile-2.png" alt="" />
-          <p class="pl-3">Pro Rasel</p>
-        </div>
-        <div class="col-md-4 col-sm-6 player col-6 p-3 d-flex align-items-center">
-          <img src="assets/profile/profile-3.png" alt="" />
-          <p class="pl-3">Abu Sufian</p>
-        </div>
+<body onload="myFunction()" style="margin:0;">
 
-        <div class="col-md-4 col-sm-6 player col-6 p-3 d-flex align-items-center">
-          <img src="assets/profile/profile-4.png" alt="" />
-          <p class="pl-3">Shajedul Karim</p>
-        </div>
-        <div class="col-md-4 col-sm-6 player col-6 p-3 d-flex align-items-center">
-          <img src="assets/profile/profile-5.png" alt="" />
-          <p class="pl-3">Maruf Ahmed</p>
-        </div>
-        <div class="col-md-4 col-sm-6 player col-6 p-3 d-flex align-items-center">
-          <img src="assets/profile/profile-6.png" alt="" />
-          <p class="pl-3">Mujahid</p>
-        </div>
-      </div>
+  <!-- Loader Start -->
+  <div id="pre-container">
+    <div class="loader">
+      <div class="loader--dot"></div>
+      <div class="loader--dot"></div>
+      <div class="loader--dot"></div>
+      <div class="loader--dot"></div>
+      <div class="loader--dot"></div>
+      <div class="loader--dot"></div>
+      <div class="loader--text"></div>
+    </div>
+  </div>
 
-      <hr />
+  <!-- When loader start display set to none, this div is only for loading purpose -->
+  <div id="myDiv" class="loader d-none">
 
-      <h3 class="primary-highlight">Top Blog</h3>
-      <div class="row">
-        <div class="col-md-6 blog d-flex p-3">
-          <img src="assets/blog/blog-1.png" alt="" />
-          <div class="pl-3">
-            <h5>13 of My Favorite UI/UX Goodies</h5>
-            <small>By <span class="primary-highlight">Danny Sapio</span></small>
+    <!-- Main body started -->
+
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark primary-highlight">
+        <div class="container px-0">
+          <a class="navbar-brand" href="#"><img src="assets/icon/logo.png" alt="" /></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <!-- use ml-auto for move the nav-item to right -->
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active pt-2">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item pt-2">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item pt-2">
+                <a class="nav-link" href="#">Works</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img src="assets/profile/profile-1.png" alt="" /></a>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="col-md-6 blog d-flex p-3">
-          <img src="assets/blog/blog-2.png" alt="" />
-          <div class="pl-3">
-            <h5>UI cheat sheet: list vs grids</h5>
-            <small>By <span class="primary-highlight">Tess Gadd</span></small>
+      </nav>
+    </header>
+
+    <!-- Top Player -->
+
+    <main class="mx-auto mt-4">
+      <section class="container-fluid bg-white pb-3 pt-2 rounded">
+        <h3 class="pt-3 primary-highlight">Top Player</h3>
+        <!-- .row*2>.col-md-4.player*3>img+p{player-$} -->
+        <div class="row">
+          <div class="col-md-4 col-sm-6 col-6 player p-3 d-flex align-items-center">
+            <img src="assets/profile/profile-1.png" alt="" />
+            <p class="pl-3">John Smith</p>
+          </div>
+          <div class="col-md-4 col-sm-6 player col-6 p-3 d-flex align-items-center">
+            <img src="assets/profile/profile-2.png" alt="" />
+            <p class="pl-3">Pro Rasel</p>
+          </div>
+          <div class="col-md-4 col-sm-6 player col-6 p-3 d-flex align-items-center">
+            <img src="assets/profile/profile-3.png" alt="" />
+            <p class="pl-3">Abu Sufian</p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 player col-6 p-3 d-flex align-items-center">
+            <img src="assets/profile/profile-4.png" alt="" />
+            <p class="pl-3">Shajedul Karim</p>
+          </div>
+          <div class="col-md-4 col-sm-6 player col-6 p-3 d-flex align-items-center">
+            <img src="assets/profile/profile-5.png" alt="" />
+            <p class="pl-3">Maruf Ahmed</p>
+          </div>
+          <div class="col-md-4 col-sm-6 player col-6 p-3 d-flex align-items-center">
+            <img src="assets/profile/profile-6.png" alt="" />
+            <p class="pl-3">Mujahid</p>
           </div>
         </div>
-        <div class="col-md-6 blog d-flex p-3">
-          <img src="assets/blog/blog-3.png" alt="" />
 
-          <div class="pl-3">
-            <h5>7 typography tips for interface design</h5>
-            <small>By <span class="primary-highlight">Jeremiah Lam</span></small>
+        <hr />
+
+        <!-- Top Blog -->
+
+        <h3 class="primary-highlight">Top Blog</h3>
+        <div class="row">
+          <div class="col-md-6 blog d-flex p-3">
+            <img src="assets/blog/blog-1.png" alt="" />
+            <div class="pl-3">
+              <h5>13 of My Favorite UI/UX Goodies</h5>
+              <small>By <span class="primary-highlight">Danny Sapio</span></small>
+            </div>
+          </div>
+          <div class="col-md-6 blog d-flex p-3">
+            <img src="assets/blog/blog-2.png" alt="" />
+            <div class="pl-3">
+              <h5>UI cheat sheet: list vs grids</h5>
+              <small>By <span class="primary-highlight">Tess Gadd</span></small>
+            </div>
+          </div>
+          <div class="col-md-6 blog d-flex p-3">
+            <img src="assets/blog/blog-3.png" alt="" />
+
+            <div class="pl-3">
+              <h5>7 typography tips for interface design</h5>
+              <small>By <span class="primary-highlight">Jeremiah Lam</span></small>
+            </div>
+          </div>
+          <div class="col-md-6 blog d-flex p-3">
+            <img src="assets/blog/blog-4.png" alt="" />
+
+            <div class="pl-3">
+              <h5>Your logo is copied</h5>
+              <small>By
+                <span class="primary-highlight">Ferdinand Vogler</span></small>
+            </div>
           </div>
         </div>
-        <div class="col-md-6 blog d-flex p-3">
-          <img src="assets/blog/blog-4.png" alt="" />
+      </section>
+    </main>
 
-          <div class="pl-3">
-            <h5>Your logo is copied</h5>
-            <small>By
-              <span class="primary-highlight">Ferdinand Vogler</span></small>
+    <!-- Top Courses -->
+    <section id="courses" class="sub-section container-fluid bg-white mt-3 pt-3 pb-4 mx-auto rounded">
+      <h3 class="pb-3 mt-2 primary-highlight">Top Courses</h3>
+      <div class="card-deck">
+        <div class="row px-3">
+          <div class="col-md-4 p-0">
+            <div class="card">
+              <div class="d-flex justify-content-center">
+                <img class="card-img-top" src="assets/courses/course-1.png" alt="Modern Psychology-1" />
+              </div>
+              <div class="card-body py-1">
+                <h5 class="card-title">React - The Complete Guide</h5>
+                <small><span class="text-danger">Reed Krakoff</span></small>
+              </div>
+
+
+
+              <div class="card-footer d-flex justify-content-between">
+                <div>
+                  <div class="d-flex star">
+
+                    <p>
+                      <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                        class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                        class="fa fa-star" aria-hidden="true"></i> 4.5
+                    </p>
+                  </div>
+                </div>
+                <div class="d-flex clock">
+                  <p><i class="fas fa-clock"></i> 1:30hr</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-md-4 p-0">
+            <div class="card">
+              <div class="d-flex justify-content-center">
+                <img class="card-img-top" src="assets/courses/course-2.png" alt="Modern Psychology-1" />
+              </div>
+              <div class="card-body py-1">
+                <h5 class="card-title">Powerpoint 2020 Course</h5>
+                <small><span class="text-danger">Walter Scott</span></small>
+              </div>
+
+              <div class="card-footer d-flex justify-content-between">
+                <div>
+                  <div class="d-flex star">
+
+                    <p>
+                      <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                        class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                        class="fa fa-star" aria-hidden="true"></i> 4.5
+                    </p>
+                  </div>
+                </div>
+                <div class="d-flex clock">
+                  <p>
+                    <span><i class="fas fa-clock"></i> 1:30hr</span>
+                  </p>
+                </div>
+              </div>
+              <!-- </div> -->
+            </div>
+          </div>
+
+          <div class="col-md-4 p-0">
+            <div class="card">
+              <div class="d-flex justify-content-center">
+                <img class="card-img-top" src="assets/courses/course-3.png" alt="Modern Psychology-1" />
+              </div>
+              <div class="card-body py-1">
+                <h5 class="card-title">The Complete JavaScript</h5>
+                <small><span class="text-danger">Course 2020</span></small>
+              </div>
+
+              <div class="card-footer d-flex justify-content-between">
+                <div>
+                  <div class="d-flex star">
+
+                    <p>
+                      <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                        class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                        class="fa fa-star" aria-hidden="true"></i> 4.5
+                    </p>
+                  </div>
+                </div>
+                <div class="d-flex clock">
+                  <p><i class="fas fa-clock"></i> 1:30hr</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
-  </main>
 
-  <section id="courses" class="sub-section container-fluid bg-white mt-3 pt-3 pb-4 mx-auto rounded">
-    <h3 class="pb-3 mt-2 primary-highlight">Top Courses</h3>
-    <div class="card-deck">
-      <div class="row px-3">
-        <div class="col-md-4 p-0">
-          <div class="card">
-            <div class="d-flex justify-content-center">
-              <img class="card-img-top" src="assets/courses/course-1.png" alt="Modern Psychology-1" />
-            </div>
-            <div class="card-body py-1">
-              <h5 class="card-title">React - The Complete Guide</h5>
-              <small><span class="text-danger">Reed Krakoff</span></small>
-            </div>
+    <!-- Main body End -->
 
 
-
-            <div class="card-footer d-flex justify-content-between">
-              <div>
-                <div class="d-flex star">
-
-                  <p>
-                    <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
-                      class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
-                      class="fa fa-star" aria-hidden="true"></i> 4.5
-                  </p>
-                </div>
-              </div>
-              <div class="d-flex clock">
-                <p><i class="fas fa-clock"></i> 1:30hr</p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="col-md-4 p-0">
-          <div class="card">
-            <div class="d-flex justify-content-center">
-              <img class="card-img-top" src="assets/courses/course-2.png" alt="Modern Psychology-1" />
-            </div>
-            <div class="card-body py-1">
-              <h5 class="card-title">Powerpoint 2020 Course</h5>
-              <small><span class="text-danger">Walter Scott</span></small>
-            </div>
-
-            <div class="card-footer d-flex justify-content-between">
-              <div>
-                <div class="d-flex star">
-
-                  <p>
-                    <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
-                      class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
-                      class="fa fa-star" aria-hidden="true"></i> 4.5
-                  </p>
-                </div>
-              </div>
-              <div class="d-flex clock">
-                <p>
-                  <span><i class="fas fa-clock"></i> 1:30hr</span>
-                </p>
-              </div>
-            </div>
-            <!-- </div> -->
-          </div>
-        </div>
-
-        <div class="col-md-4 p-0">
-          <div class="card">
-            <div class="d-flex justify-content-center">
-              <img class="card-img-top" src="assets/courses/course-3.png" alt="Modern Psychology-1" />
-            </div>
-            <div class="card-body py-1">
-              <h5 class="card-title">The Complete JavaScript</h5>
-              <small><span class="text-danger">Course 2020</span></small>
-            </div>
+    <!-- Loader div end -->
+  </div>
 
 
+  <!-- Loader JS Start -->
+  <script>
+    var myVar;
 
-            <div class="card-footer d-flex justify-content-between">
-              <div>
-                <div class="d-flex star">
+    function myFunction() {
+      myVar = setTimeout(showPage, 5000);
+    }
 
-                  <p>
-                    <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
-                      class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
-                      class="fa fa-star" aria-hidden="true"></i> 4.5
-                  </p>
-                </div>
-              </div>
-              <div class="d-flex clock">
-                <p><i class="fas fa-clock"></i> 1:30hr</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    function showPage() {
+      document.getElementById("pre-container").style.display = "none";
+      document.getElementById("myDiv").className = "d-block";
+    }
+  </script>
+
+  <!-- Loader JS End -->
+
+
 
   <!-- Bootstrap js -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
